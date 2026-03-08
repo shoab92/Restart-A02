@@ -3,7 +3,7 @@ import React from 'react';
 
 const InProgressCard1 = ({count}) => {
     return (
-        <div className="relative w-1/4 sm:w-[70%] h-[220px]  bg-gradient-to-r from-[#6b56e3] to-[#9f62f2] rounded-xl  text-white shadow-md flex flex-col items-center justify-center">
+        <div className="relative w-1/4 sm:w-[70%] h-[220px]  bg-gradient-to-r from-[#4ee090] to-[#24bc21] rounded-xl  text-white shadow-md flex flex-col items-center justify-center">
         <img
         src="/vector1.png"
         alt="bgx"

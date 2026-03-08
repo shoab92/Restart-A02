@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import InProgressCard1 from './InProgressCard1';
 import InProgressCard2 from './InProgressCard2';
 import CustomerTickets from './CustomerTickets';
-import { tickets as allTickets } from '../Data/tickets';
 
-const Hero = () => {
-
-
-    const [tickets, setTickets] = useState(allTickets);
-    const [taskStatusTickets, setTaskStatusTickets] = useState([]);
-    const [resolvedTickets, setResolvedTickets] = useState([]);
+const Hero = ({ tickets, setTickets, taskStatusTickets, setTaskStatusTickets, resolvedTickets, setResolvedTickets }) => {
 
   const handleAddToTaskStatus=(ticketId) => {
     const ticketToAdd=tickets.find(t=>t.id===ticketId);

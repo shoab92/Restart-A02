@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Nav = () => {
+const Nav = ({ onAddTicket }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = ['Home', 'FAQ', 'Changelog', 'Blog', 'Download', 'Contact'];
@@ -17,10 +17,11 @@ const Nav = () => {
           </div>
           <div className="flex items-center gap-5 md:gap-6 lg:gap-8">
             <button
+              onClick={onAddTicket}
               className={`
                 hidden md:inline-flex
                 px-5 py-2.5 
-                bg-gradient-to-r from-[#6b56e3] to-[#9f62f2]
+                bg-gradient-to-r from-[#5784c3] to-[#2977ca]
                 text-white font-semibold rounded-md
                 hover:shadow-lg hover:shadow-indigo-200/50
                 transition-all duration-200
