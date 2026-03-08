@@ -1,8 +1,9 @@
 import React from 'react';
 
-const InProgressCard2 = ({count}) => {
+
+const InProgressCard1 = ({count}) => {
     return (
-        <div className="relative w-1/4 sm:w-[70%] h-[220px]  bg-gradient-to-r from-[#77d069] to-[#44837a] rounded-xl text-white shadow-md flex flex-col items-center justify-center ">
+        <div className="relative w-1/4 sm:w-[70%] h-[220px]  bg-gradient-to-r from-[#6b56e3] to-[#9f62f2] rounded-xl  text-white shadow-md flex flex-col items-center justify-center">
         <img
         src="/vector1.png"
         alt="bgx"
@@ -15,7 +16,7 @@ const InProgressCard2 = ({count}) => {
 />
 
             <h1 className="text-lg mt-[2rem] font-semibold tracking-wide uppercase opacity-80">
-                Resolved
+                In-Progress
             </h1>
 
             <h5 className="text-7xl pb-[4rem] text-center font-bold leading-tight">
@@ -25,4 +26,4 @@ const InProgressCard2 = ({count}) => {
 );
 };
 
-export default InProgressCard2;
+export default InProgressCard1;
